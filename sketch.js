@@ -20,6 +20,7 @@ var wall_71,wall_72,wall_73,wall_74,wall_75,wall_76,wall_77,wall_78,wall_79,wall
 var enemy1,enemy2;
 function preload() {
 ball_icon = loadImage("ball-icon-png-4628.png");
+ghost = loadImage("Cartoon ghost.jpg");
 }
 
 function setup()                                          
@@ -107,6 +108,7 @@ function setup()
   ball.scale = 0.08;
 
   enemy1 = createSprite(400,315,100,10);
+  enemy1.addImage("enemy1",ghost);
   enemy1.scale = 0.08
   
   enemy2 = createSprite(800,315,100,10);
