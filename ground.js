@@ -10,6 +10,7 @@ class Ground
     this.w = w;
     this.h = h;
     World.add(world, this.body);
+    
   }
 
   show() {
